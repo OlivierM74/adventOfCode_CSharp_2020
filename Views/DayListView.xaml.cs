@@ -16,9 +16,9 @@ namespace AdventOfCode2020.Views
     /// <summary>
     /// Interaction logic for DayView.xaml
     /// </summary>
-    public partial class DayView : UserControl
+    public partial class DayListView : UserControl
     {
-        public DayView()
+        public DayListView()
         {
             InitializeComponent();
         }

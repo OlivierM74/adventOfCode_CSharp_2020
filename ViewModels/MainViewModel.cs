@@ -6,5 +6,11 @@ namespace AdventOfCode2020.ViewModels
 {
     internal class MainViewModel: ViewModelBase
     {
+        public ViewModelBase CurrentViewModel { get; }
+
+        public MainViewModel()
+        { 
+            CurrentViewModel = new DayListViewModel();
+        }
     }
 }

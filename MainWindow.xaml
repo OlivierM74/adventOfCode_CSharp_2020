@@ -4,6 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:views="clr-namespace:AdventOfCode2020.Views"
     Title="Advent of code 2020">
     <Grid Margin="20 10" MaxWidth="600">
-        <views:DayView/>
+        <views:DayListView DataContext="{Binding CurrentViewModel}"/>
     </Grid>
 </Window>

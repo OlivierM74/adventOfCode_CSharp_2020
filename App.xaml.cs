@@ -1,5 +1,7 @@
-﻿using System.Configuration;
+﻿using AdventOfCode2020.ViewModels;
+using System.Configuration;
 using System.Data;
+using System.Runtime.CompilerServices;
 using System.Windows;
 
 namespace AdventOfCode2020
@@ -9,6 +11,16 @@ namespace AdventOfCode2020
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            MainWindow = new MainWindow()
+            {
+                DataContext = new MainViewModel()
+            };
+            MainWindow.Show();
+
+            base.OnStartup(e);
+        }
     }
 
 }
