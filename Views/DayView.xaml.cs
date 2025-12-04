@@ -8,16 +8,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AdventOfCode2020
+namespace AdventOfCode2020.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for DayView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class DayView : UserControl
     {
-        public MainWindow()
+        public DayView()
         {
             InitializeComponent();
         }
