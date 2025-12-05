@@ -18,9 +18,9 @@ namespace AdventOfCode2020.ViewModels
         {
             _days = new ObservableCollection<DayViewModel>();
 
-            _days.Add(new DayViewModel(new Day(1)));
-            _days.Add(new DayViewModel(new Day(2)));
-            _days.Add(new DayViewModel(new Day(3)));
+            _days.Add(new DayViewModel(new Day(1, "short descrption of day 1", "long description of day 1")));
+            _days.Add(new DayViewModel(new Day(2, "short descrption of day 2", "long description of day 2")));
+            _days.Add(new DayViewModel(new Day(3, "short descrption of day 3", "long description of day 3")));
         }
     }
 }

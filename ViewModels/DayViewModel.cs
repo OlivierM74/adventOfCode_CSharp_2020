@@ -11,6 +11,7 @@ namespace AdventOfCode2020.ViewModels
     {
         private readonly Day _day = day;
         public string DayName => _day.ToString();
+        public string DayDescription => _day.ShortDescription;
 
         public ICommand RunDailyInputCommand { get; }
         public ICommand RunDailyUnitTestCommand { get; }
